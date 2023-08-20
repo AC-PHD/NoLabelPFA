@@ -1,5 +1,5 @@
 # this will create subsets according to condition
-# remove ribosomal and mitochondrial genes
+# OPTIONAL remove ribosomal and mitochondrial genes
 # create PFA input tables which are labeled with A) the condition name and B) the a number for the condition (see # NAME variables)
 # if you do not intend to use numbers as labels you can ignore ## Create Table using numbers as labels ---- 
 
@@ -120,7 +120,7 @@ pdf(file=saveNamePDF, width = 11.69, height = 8.27,  paper = "a4r" )
 dimPlot_start_2_criterion2
 dev.off()
 
-## remove ribosomal and mitochondrial genes
+## OPTIONAL remove ribosomal and mitochondrial genes ----
 # if you would like to save the resulting subsets that are ready for preparing the PFA input table as RDS objects, uncomment # saveRDS(...)
 
 # Get the names of all mitochondrial and ribosomal genes in condition_1
